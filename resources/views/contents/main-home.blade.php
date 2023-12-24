@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Scrolling Nav - Start Bootstrap Template</title>
+    <title>Percetakan Rajawali</title>
+    <!-- icon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('assets/images/favicon.ico') }}" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet" />
@@ -96,7 +97,7 @@
                     <h2>Layanan Kami</h2>
                     <p class="lead">Temukan pilihan yang tepat untuk kebutuhan Anda</p>
 
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="row row-cols-1 row-cols-sm-7 row-cols-md-3 g-4">
                         <div class="col">
                             <div class="card h-100">
                                 <img src="{{ asset('assets/images/layanan01.jpg') }}" class="card-img-top" alt="undangan">

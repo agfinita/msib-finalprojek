@@ -62,7 +62,20 @@ class ShowProductController extends Controller
             // redirect with flashed
             return redirect('/tables')->with('status', 'Data successfully add!');
         } else {
-            return redirect()->back()->with('error', 'Gambar tidak valid');
+            // return redirect()->back()->with('error', 'Gambar tidak valid');
+            // simpan data ke dalam database
+            DB::table('products')->insert([
+                'product_name'  => $validatedData['name'],
+                'category_id'   => $validatedData['category'],
+                'product_code'  => $validatedData['code'],
+                'price'         => $validatedData['price'],
+                'description'   => $validatedData['desc'],
+                'unit'          => $validatedData['unit'],
+                'stock'         => $validatedData['stock'],
+                'discount'      => $validatedData['disc'],
+            ]);
+
+            return redirect('/tables')->with('status', 'Data successfully add!');
         }
     }
 
@@ -73,6 +86,8 @@ class ShowProductController extends Controller
     }
 
     public function updateProcess(Request $request, $id) {
+        // dd($request->all());
+
         $products   = DB::table('products')->where('id', $id)->first();
 
         $validatedData  = $request->validate([
@@ -92,23 +107,34 @@ class ShowProductController extends Controller
             'image'     => 'image|file|max:1024|nullable'
         ]);
 
+        // dd($validatedData);  // nyampe kene bener
+
         // data berhasil divalidasi
+        $imagePath  = $request->oldImage;
+
+        DB::table('products')->where('id', $id)->update([
+            'product_name'  => $validatedData['name'],
+            'category_id'   => $validatedData['category'],
+            'product_code'  => $validatedData['code'],
+            'price'         => $validatedData['price'],
+            'description'   => $validatedData['desc'],
+            'unit'          => $validatedData['unit'],
+            'stock'         => $validatedData['stock'],
+            'discount'      => $validatedData['disc'],
+            'image'         => $imagePath
+        ]);
+
         if ($request->hasFile('image')) {
+            // pengecekan gambar lama
+            if($request->oldImage) {
+                Storage::delete($request->oldImage);
+            }
+
             // simpan gambar ke dalam direktori
             $imagePath  = $request->file('image')->store('post-images');
-
-            DB::table('products')->where('id', $id)->update([
-                'product_name'  => $validatedData['name'],
-                'category_id'   => $validatedData['category'],
-                'product_code'  => $validatedData['code'],
-                'price'         => $validatedData['price'],
-                'description'   => $validatedData['desc'],
-                'unit'          => $validatedData['unit'],
-                'stock'         => $validatedData['stock'],
-                'discount'      => $validatedData['disc'],
-                'image'         => $imagePath
-            ]);
         }
+
+        // dd($products); // nyampe kene salah e
 
         // redirect with flashed
         return redirect('/tables')->with('status', 'Data updated successfully!');

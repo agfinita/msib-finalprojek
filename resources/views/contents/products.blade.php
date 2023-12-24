@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Scrolling Nav - Start Bootstrap Template</title>
+    <title>Percetakan Rajawali</title>
+    <!-- icon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('assets/images/favicon.ico') }}" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet" />
@@ -30,11 +31,11 @@
     <!-- Content -->
     <section id="product" class="d-flex justify-content-center">
         <div class="container">
-            <div class="row row-cols-1 row-cols-md-4 g-5">
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-xl-4 row-cols-md-3 g-5">
                 @foreach ( $products as $p )
                 <div class="col">
                     <div class="card border-secondary h-100 p-3">
-                        <img src="{{ asset('storage/' . $p->image) }}" style="width: 100"; height="150px" alt="tidak ada gambar">
+                        <img src="{{ asset('storage/' . $p->image) }}" style="width: 100"; height="165px" alt="tidak ada gambar">
                         <div class="card-body">
                             <div class="card-title fw-bold text-uppercase mb-0"> {{ $p->product_name }} </div>
                             <div class="card-text"><span class="badge text-bg-info"> {{ $p->category_name }} </span></div>

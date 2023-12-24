@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Dashboard - SB Admin</title>
+    <title>Percetakan Rajawali</title>
+    <!-- icon -->
+    <link rel="icon" type="image/x-icon" href="{{ asset('assets/images/favicon.ico') }}" />
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
     <link href="{{ asset('assets02/css/styles.css') }}" rel="stylesheet" />
     <link rel="stylesheet" href="{{ asset('assets/css_native/style.css') }}">
@@ -59,12 +61,11 @@
 
                                         <div class="form-group mb-3">
                                             <label for="category" class="lbl mb-2">Category Product</label></br>
-                                            <select class="form-select" aria-label="Default select example"
-                                                id="category" name="category">
+                                            <select class="form-select" aria-label="Default select example" id="category" name="category">
                                                 <option value="0">- Select Category -</option>
-                                                <option value="6"> Desserts </option>
-                                                <option value="7"> Seafood </option>
-                                                <option value="8"> Snacks </option>
+                                                <option value="6"> Desserts </option>   <!-- 6 -->
+                                                <option value="7"> Seafood </option>    <!-- 7 -->
+                                                <option value="8"> Snacks </option>     <!-- 8 -->
                                             </select>
 
                                             @if (count($errors) > 0)
@@ -159,6 +160,7 @@
                                         </button>
                                     </div>
                                 </form>
+                                <!-- form end -->
                             </div>
                             <!-- /.card -->
                         </div>
