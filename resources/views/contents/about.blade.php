@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Scrolling Nav - Start Bootstrap Template</title>
+    <title>Yakiniki</title>
     <link rel="icon" type="image/x-icon" href="{{ asset('assets/images/favicon.ico') }}" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet" />
@@ -19,26 +19,56 @@
     @include('layouts.navbar')
 
     <!-- Header-->
-    <header class="bg-primary bg-gradient text-white">
-        <div class="container px-4 text-center">
-            <h1 class="fw-bolder">Tentang Kami</h1>
-            <p class="lead">Menggabungkan keahlian percetakan dan inovasi kuliner <br> untuk memberikan pengalaman yang tak terlupakan bagi pelanggan kami.</p>
+    <div id="carouselExampleCaptions">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{{ asset('assets/images/carousel/carousel-about.jpg') }}" class="d-block w-100"
+                    alt="carousel">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="fw-bolder">Tentang Kami</h1>
+                    <p class="lead fw-semibold">Menggabungkan keahlian percetakan dan inovasi kuliner <br> untuk memberikan
+                        pengalaman yang tak terlupakan bagi pelanggan kami</p>
+                </div>
+            </div>
         </div>
-    </header>
+    </div>
 
     <!-- Content -->
     <section id="about">
         <div class="container px-4">
             <div class="row gx-4 justify-content-center">
                 <div class="col-lg-8">
-                    <p class="lead">Percetakan Rajawali (2010-Sekarang)</p>
+                    <p class="lead">Yakiniki resto</p>
                     <p>
-                        Berawal dari keinginan untuk memenuhi kebutuhan akan layanan cetak yang handal, Rajawali lahir
-                        dari semangat untuk menghadirkan solusi cetak yang inovatif dan berkualitas
-                        tinggi. Dengan dedikasi yang kokoh terhadap keunggulan, kami telah
-                        membangun jejak prestasi sebagai penyedia layanan percetakan yang andal dan profesional. Sejak
-                        awal, Rajawali telah mengedepankan nilai integritas, kreativitas, dan komitmen untuk memberikan
-                        hasil cetak yang memukau serta memenuhi harapan pelanggan.
+                        Selamat datang di Yakiniki! Kami adalah tempat di mana kreativitas
+                        kuliner bertemu dengan keahlian dalam mencetak karya terbaik Anda.
+                        Di Yakiniki, kami menghadirkan pengalaman kuliner yang tak
+                        terlupakan dengan menawarkan beragam makanan olahan <i>homemade</i>
+                        yang lezat dan segar. Tak hanya itu, kami juga memiliki
+                        layanan percetakan yang inovatif untuk membantu Anda mencetak
+                        karya desain yang luar biasa. Kami bangga menjadi destinasi
+                        kuliner yang tidak hanya memanjakan lidah Anda tetapi juga menjadi
+                        solusi percetakan yang andal untuk memenuhi kebutuhan visual Anda.
+
+                    <p>
+                        Kami percaya bahwa setiap hidangan yang kami sajikan harus mencerminkan
+                        keaslian dan kualitas. Setiap hidangan <i>homemade</i> yang kami tawarkan dibuat
+                        dengan cinta dan perhatian terhadap rasa serta nilai gizi yang seimbang.
+                        Di sisi lain, layanan percetakan kami didukung oleh teknologi mutakhir untuk
+                        mencetak karya desain Anda dengan kualitas tertinggi. Apapun yang Anda butuhkan,
+                        mulai dari cetakan promosi bisnis hingga kebutuhan personal Anda, Yakiniki siap
+                        memberikan solusi yang sesuai dengan harapan Anda.
+                    </p>
+
+                    <p>
+                        Di Yakiniki, kami terus berinovasi dalam setiap hidangan yang kami sajikan dan
+                        dalam setiap cetakan yang kami hasilkan. Kami didorong oleh semangat untuk
+                        memberikan yang terbaik bagi pelanggan kami. Baik Anda mencari santapan lezat
+                        atau mencari solusi cetakan yang menonjol, kami berkomitmen untuk memberikan
+                        pengalaman yang memuaskan. Jadikanlah Yakiniki sebagai destinasi utama Anda
+                        untuk menikmati makanan olahan <i>homemade</i> yang istimewa sambil menemukan solusi
+                        cetakan yang kreatif dan berkualitas.
+                    </p>
                     </p>
                 </div>
             </div>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Percetakan Rajawali</title>
+    <title>Yakiniki</title>
     <!-- icon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('assets/images/favicon.ico') }}" />
     <!-- Core theme CSS (includes Bootstrap)-->
@@ -20,13 +20,19 @@
     @include('layouts.navbar')
 
     <!-- Header-->
-    <header class="bg-primary bg-gradient text-white">
-        <div class="container px-4 text-center">
-            <h1 class="fw-bolder">Produk Kami</h1>
-            <p class="lead">Sambil menunggu cetakannmu, nikmati hidangan yang menggugah seleramu.</p>
-            <a class="btn btn-lg btn-light" href="#product">Lihat produk</a>
+    <div id="carouselExampleCaptions">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{{ asset('assets/images/carousel/carousel-02.jpg') }}" class="d-block w-100"
+                    alt="carousel">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="fw-bolder">Produk Kami</h1>
+                    <p class="lead fw-semibold">Sambil menunggu cetakannmu, nikmati hidangan yang menggugah seleramu</p>
+                    <a class="btn btn-lg btn-primary" href="#product">Lihat produk</a>
+                </div>
+            </div>
         </div>
-    </header>
+    </div>
 
     <!-- Content -->
     <section id="product" class="d-flex justify-content-center">

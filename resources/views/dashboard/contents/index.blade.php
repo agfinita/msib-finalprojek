@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Percetakan Rajawali</title>
+    <title>Yakiniki</title>
     <!-- icon -->
     <link rel="icon" type="image/x-icon" href="{{ asset('assets/images/favicon.ico') }}" />
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
@@ -104,6 +104,17 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- bar chart -->
+                        <div class="col-xl-6">
+                            <div class="card mb-4">
+                                <div class="card-header">
+                                    <i class="fas fa-chart-bar me-1"></i>
+                                    Jumlah produk/kategori
+                                </div>
+                                <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas>
+                                </div>
+                            </div>
+                        </div>
                         <!-- area chart -->
                         <div class="col-xl-6">
                             <div class="card mb-4">
@@ -113,17 +124,6 @@
                                 </div>
                                 <div class="card-body">
                                     <div id="container-2" style="width:100%; height:300px;"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- bar chart -->
-                        <div class="col-xl-6">
-                            <div class="card mb-4">
-                                <div class="card-header">
-                                    <i class="fas fa-chart-bar me-1"></i>
-                                    Jumlah produk/kategori
-                                </div>
-                                <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas>
                                 </div>
                             </div>
                         </div>

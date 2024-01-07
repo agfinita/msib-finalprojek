@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Scrolling Nav - Start Bootstrap Template</title>
+    <title>Yakiniki</title>
     <link rel="icon" type="image/x-icon" href="{{ asset('assets/images/favicon.ico') }}" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet" />
@@ -19,13 +19,19 @@
     @include('layouts.navbar')
 
     <!-- Header-->
-    <header class="bg-primary bg-gradient text-white">
-        <div class="container px-4 text-center">
-            <h1 class="fw-bolder">Kontak Kami</h1>
-            <p class="lead">Tunggu apa lagi? Segera hubungi kami untuk solusi cepat dan tepat terkait
-                kebutuhan Anda. <br> Kami siap memberikan layanan terbaik kami untuk Anda!</p>
+    <div id="carouselExampleCaptions">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{{ asset('assets/images/carousel/carousel-01.jpg') }}" class="d-block w-100"
+                    alt="carousel">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="fw-bolder">Kontak Kami</h1>
+                    <p class="lead fw-semibold">Tunggu apa lagi? Segera hubungi kami untuk solusi cepat dan tepat terkait
+                        kebutuhan Anda. <br> Kami siap memberikan layanan terbaik kami untuk Anda!</p>
+                </div>
+            </div>
         </div>
-    </header>
+    </div>
 
     <!-- Content -->
     <section id="contact">

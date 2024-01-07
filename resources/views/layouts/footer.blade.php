@@ -14,7 +14,7 @@
             <h4 class="border-bottom border-secondary">Kontak</h4>
             <ul class="list-unstyled">
                 <li><a href="#" class="text-decoration-none text-white"><i class="fa-regular fa-envelope"
-                            style="color: #ffffff;"></i> rajawali@gmail.com</a></li>
+                            style="color: #ffffff;"></i> agfinitaagh@gmail.com</a></li>
 
                 <li><a href="#" class="text-decoration-none text-white"><i class="fa-solid fa-phone"
                             style="color: #ffffff;"></i> (+62)85895168097</a></li>
